@@ -1,0 +1,2 @@
+# pythonExer
+sample python codes
