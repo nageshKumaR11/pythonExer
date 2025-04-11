@@ -50,9 +50,9 @@ You tried to turn "abc" into a number:"""
 
 
 
-# try:
-#     with open("no_file.txt", "r") as file:
-#         content = file.read()
-#         print(content)
-# except FileNotFoundError:
-#     print("The file 'no_file.txt' was not found.")
+try:
+    with open("some_file.txt", "r") as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    print("The file 'no_file.txt' was not found.")

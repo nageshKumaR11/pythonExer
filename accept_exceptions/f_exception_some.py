@@ -1,8 +1,8 @@
 
 try :
-    file = open("somefile.txt")    # change in file name shows error 
-except Exception :
-    print("File not found.")
+    file = open("some_file.txt")    # change in file name shows error 
+except Exception as e:
+    print(e)
 else:
     print('File was found.')
     file_content = file.read()
