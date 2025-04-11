@@ -1,6 +1,6 @@
 
 try :
-    file = open("somefile.txt")
+    file = open("somefile.txt")    # change in file name shows error 
 except Exception :
     print("File not found.")
 else:
