@@ -13,6 +13,8 @@ class Robot:
         self.task = task
         self.__battery_level = 100      #Private variable 
         
+        #__battery_level: Prefixed with double underscores to make it private.
+
     def introduce(self):
         print(f"Hi, I am {self.name}, I {self.task}. Battery : {self.__battery_level}%") 
 
