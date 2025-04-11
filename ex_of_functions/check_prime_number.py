@@ -1,4 +1,5 @@
-def is_prime(number):
+
+def is_prime(number):  # 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
     """
     Checks if a number is prime.
 
@@ -11,16 +12,19 @@ def is_prime(number):
     if not isinstance(number, int) or number <= 1:
         return False  # 1 and numbers less than 1 are not prime
     if number <= 3:
-        return True  # 2 and 3 are prime
-    if number % 2 == 0 or number % 3 == 0:
-        return False  # Numbers divisible by 2 or 3 are not prime
+        return True
 
-    i = 5
-    while i * i <= number:
-        if number % i == 0 or number % (i + 2) == 0:
+    for i in range(2, number):
+        if (number % i) == 0:
+            print(number, "is not a prime number")
+            print(i, "times", number // i, "is", number)
             return False
-        i += 6
+
+    print(number, "is a prime number")
     return True
+
+
+
 
 print(is_prime(7))  # True
 print(is_prime(12)) # False
