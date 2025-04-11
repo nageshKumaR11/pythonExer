@@ -26,3 +26,15 @@ security = SecurityBot("Guardian")
 security.greet()
 security.patrol()
 
+################################################################################################
+#                                Explanation
+################################################################################################
+
+"""
+CleanerRobot and SecurityRobot inherit from Robot.
+
+They reuse the greet method from the parent class.
+
+They have their own specialized behaviors too!
+
+"""
